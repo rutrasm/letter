@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Planetarium dengan Bunga -->
+  <div class="planetarium-background">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="moon"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    
+    <div class="floating-flower flower1">🌸</div>
+    <div class="floating-flower flower2">🌺</div>
+    <div class="floating-flower flower3">💮</div>
+    <div class="floating-flower flower4">🏵️</div>
+    <div class="floating-flower flower5">🌼</div>
+    <div class="floating-flower flower6">🌷</div>
+  </div>
+  
+  <div class="container">
+    <!-- Amplop -->
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-front">
+        <div class="address-label">
+          <p><strong>To:</strong> りんだ ❤️</p>
+          <p><strong>From:</strong> えんりこ 💌</p>
+        </div>
+      </div>
+
+      <!-- Surat kosong - nanti diganti video -->
+      <div class="letter">
+        <div class="letter-content">
+          <h2>💖 Special For You 💖</h2>
+          <!-- Area untuk video akan muncul di sini -->
+        </div>
+      </div>
+
+      <div class="love-container">
+        <div class="love">❤️</div>
+        <div class="love">💖</div>
+        <div class="love">💕</div>
+        <div class="love">💗</div>
+        <div class="love">💓</div>
+        <div class="love">💞</div>
+      </div>
+    </div>
+
+    <!-- Tombol Kontrol -->
+    <div class="controls">
+      <button id="openBtn">Open</button>
+      <button id="closeBtn">Close</button>
+    </div>
+  </div>
+
+  <!-- Video Player yang akan muncul saat surat dibuka -->
+  <div class="video-popup" id="videoPopup">
+    <div class="video-container">
+      <video id="letterVideo" controls>
+        <source src="myvideo.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <button class="close-video-btn" id="closeVideoBtn">✕</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
